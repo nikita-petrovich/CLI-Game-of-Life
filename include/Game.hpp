@@ -33,7 +33,7 @@ private:
   Window m_window{};
   std::vector<std::string> m_frameA;
   std::vector<std::string> m_frameB;
-  int generationsCount{0};
+  int m_generationsCount{0};
 };
 
 #endif // GAME_HPP

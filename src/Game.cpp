@@ -98,7 +98,7 @@ void Game::mainLoop() {
   bool currentFrame{0};
   do {
     printFrame(currentFrame);
-    std::cout << "Generations passed: " << generationsCount++ << std::endl;
+    std::cout << "Generations passed: " << ++m_generationsCount << std::endl;
     updateFrame(currentFrame);
     currentFrame = !currentFrame;
     std::this_thread::sleep_for(std::chrono::milliseconds(250));
